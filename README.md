@@ -42,3 +42,12 @@ exports.handler = (event, context, callback) => {
   });
 };
 ```
+
+##### 매칭 템플릿
+```
+{
+    "S3Folder" : "$input.params('folder')",
+    "Filename" : "$input.params('object')",
+    "base64Image" : "$input.body"
+}
+```
